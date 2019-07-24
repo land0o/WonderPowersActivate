@@ -47,7 +47,7 @@ document.querySelector("#activate-xray").addEventListener("click", xRayFunction)
 const activateAll = () => {
     const powerUp = document.querySelectorAll(".power")
     powerUp.forEach(power => {
-        power.classList.toggle("enabled")
+        power.classList.add("enabled")
     });
 
     console.log(activateAll);
