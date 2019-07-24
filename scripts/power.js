@@ -42,3 +42,30 @@ const xRayFunction = () => {
 document.querySelector("#activate-xray").addEventListener("click", xRayFunction)
 
 // End Lois pepped X-RAY
+
+// ACTIVATE ALL powers
+const activateAll = () => {
+    const powerUp = document.querySelectorAll(".power")
+    powerUp.forEach(power => {
+        power.classList.toggle("enabled")
+    });
+
+    console.log(activateAll);
+}
+
+// activates the "#activate-all" button
+document.querySelector("#activate-all").addEventListener("click", activateAll)
+
+// END ACTIVATE ALL
+
+// Leech DISABLED ALL powers
+const disableAll = () => {
+    const powerDown = document.querySelectorAll(".power")
+    powerDown.forEach(power => {
+        power.classList.remove("enabled")
+    });
+
+    console.log(disableAll);
+}
+// activates the "#deactivate-all" button
+document.querySelector("#deactivate-all").addEventListener("click", disableAll)
