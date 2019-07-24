@@ -48,6 +48,8 @@ const activateAll = () => {
     const powerUp = document.querySelectorAll(".power")
     powerUp.forEach(power => {
         power.classList.add("enabled")
+        power.classList.remove("disabled")
+
     });
 
     console.log(activateAll);
@@ -63,6 +65,7 @@ const disableAll = () => {
     const powerDown = document.querySelectorAll(".power")
     powerDown.forEach(power => {
         power.classList.remove("enabled")
+        power.classList.add("disabled")
     });
 
     console.log(disableAll);
